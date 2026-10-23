@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rúbrica de imagen pública del candidato/a</title>
+<style>
+:root{--bg:#F1F2F7;--card:#FFFFFF;--text:#1B1F3B;--muted:#4A5170;--accent:#C8102E;--navy:#1B1F3B;--line:#D5D8E3;--on:#FFFFFF;--l1:#C8102E;--l2:#B76E00;--l3:#3D5A80;--l4:#1F7A6F;--field:#FFFFFF;color-scheme:light dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12142A;--card:#1E2242;--text:#EEF0F8;--muted:#B4BAD3;--accent:#FF6B7F;--navy:#0C0E20;--line:#38406A;--l1:#E5384F;--l2:#E09B2D;--l3:#6F93BF;--l4:#3CB5A5;--field:#12142A}}
+:root[data-theme="dark"]{--bg:#12142A;--card:#1E2242;--text:#EEF0F8;--muted:#B4BAD3;--accent:#FF6B7F;--navy:#0C0E20;--line:#38406A;--l1:#E5384F;--l2:#E09B2D;--l3:#6F93BF;--l4:#3CB5A5;--field:#12142A}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 Calibri,"Segoe UI",system-ui,sans-serif;padding:0 14px 110px}
+.wrap{max-width:760px;margin:0 auto}
+h1{font:700 24px/1.2 Cambria,Georgia,serif;margin:20px 0 4px}
+.sub{color:var(--muted);margin:0 0 14px;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px}
+label{display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:10px 0 4px}
+input,textarea{width:100%;font:inherit;color:var(--text);background:var(--field);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+textarea{min-height:76px;resize:vertical}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+.dim{padding:0;overflow:hidden}
+.dim>summary{display:flex;align-items:center;gap:10px;padding:14px;font-weight:700;min-height:56px}
+.dim>summary .n{flex:1}
+.dim>summary .meta{font-size:12px;color:var(--muted);font-weight:400;display:block}
+.badge{min-width:54px;text-align:center;border-radius:999px;padding:4px 10px;font-weight:700;font-size:14px;background:var(--line);color:var(--text)}
+.chev{transition:transform .2s}details[open]>summary .chev{transform:rotate(90deg)}
+.body{padding:0 14px 14px}
+.crit{border-top:1px solid var(--line);padding:12px 0}
+.crit h3{margin:0 0 2px;font-size:16px}
+.crit p{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.btns{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.lv{min-height:46px;border-radius:10px;border:1.5px solid var(--line);background:var(--field);color:var(--text);font:700 16px inherit;cursor:pointer}
+.lv[aria-pressed="true"]{color:#fff;border-color:transparent}
+.lv[data-v="1"][aria-pressed="true"]{background:var(--l1)}.lv[data-v="2"][aria-pressed="true"]{background:var(--l2)}
+.lv[data-v="3"][aria-pressed="true"]{background:var(--l3)}.lv[data-v="4"][aria-pressed="true"]{background:var(--l4)}
+.lv[data-v="0"][aria-pressed="true"]{background:var(--muted)}
+.lv:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.sel{font-size:13px;margin-top:6px;min-height:19px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td{padding:6px 4px;border-top:1px solid var(--line);vertical-align:top}td:first-child{font-weight:700;width:34px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+button.act{flex:1;min-height:46px;border-radius:10px;border:1.5px solid var(--accent);background:var(--accent);color:#fff;font:700 15px inherit;cursor:pointer;min-width:140px}
+button.act.sec{background:transparent;color:var(--accent)}
+#bar{position:fixed;left:0;right:0;bottom:0;background:var(--navy);color:#fff;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -2px 10px rgba(0,0,0,.25);z-index:5}
+#bar .in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px}
+#bar .big{font:700 26px/1 Cambria,Georgia,serif}#bar .lbl{font-size:13px;opacity:.9}
+#prog{height:5px;background:rgba(255,255,255,.25);border-radius:3px;margin-top:6px;overflow:hidden}#prog i{display:block;height:100%;background:#F2A93B;width:0}
+#bar .txt{flex:1}
+.mini{width:100%;height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:3px}.mini i{display:block;height:100%;background:var(--l3);width:0}
+</style></head><body><div class="wrap">
+<h1>Rúbrica de imagen pública del candidato/a</h1>
+<p class="sub">Curso Discurso Político · FCPyS-UNAM · 2027-1. Valora cada criterio de 1 a 4; usa N/O si no puede observarse.</p>
+<div class="card">
+<label for="m-c">Candidato/a</label><input id="m-c" data-m="cand" autocomplete="off">
+<label for="m-k">Caso o contexto</label><input id="m-k" data-m="caso" autocomplete="off">
+<label for="m-e">Evaluador/a</label><input id="m-e" data-m="eval" autocomplete="off">
+<label for="m-f">Fecha</label><input id="m-f" data-m="fecha" type="date">
+</div>
+<details class="card"><summary><b>Niveles de desempeño</b> <span style="color:var(--muted)">(toca para ver)</span></summary><table id="lvtab"></table></details>
+<div id="dims"></div>
+<div class="card"><label for="gen">Observaciones generales</label><textarea id="gen"></textarea>
+<label>Resumen para copiar</label><textarea id="sum" readonly style="min-height:150px"></textarea>
+<div class="row" style="margin-top:10px"><button class="act" id="copy">Copiar resumen</button><button class="act sec" id="reset">Reiniciar</button></div><div class="sel" id="msg"></div></div>
+</div>
+<div id="bar"><div class="in"><div class="big" id="gavg">–</div><div class="txt"><div class="lbl" id="glbl">Promedio global · sin valorar</div><div id="prog"><i></i></div></div></div></div>
+<script>
+const DATA = {"levels":[{"v":1,"name":"Insuficiente","d":"No se observa o contradice el criterio; debilita la imagen."},{"v":2,"name":"En desarrollo","d":"Está presente de forma parcial o inconsistente."},{"v":3,"name":"Adecuado","d":"Se cumple de forma consistente y coherente con el contexto."},{"v":4,"name":"Destacado","d":"Se cumple de forma sobresaliente, auténtica y estratégica; refuerza la imagen."}],"dims":[{"n":"Imagen física (personal)","items":[["Vestimenta y estilo","Trajes formales, colores estratégicos, ropa casual o informal; uso de la vestimenta (camisa remangada sin corbata)."],["Cuidado personal","Peinado, vello facial, maquillaje, vitalidad, aspecto saludable, estatura y peso corporal."],["Lenguaje no verbal","Postura erguida, caminado, contacto visual, gesticulación, manos visibles, proximidad con el público y manejo del espacio."],["Expresiones","Sonrisa auténtica (boca, ojos, pómulos), respiración, tensión, enojo, tics nerviosos."],["Vitalidad, fuerza y salud","Energía y dinamismo corporal, cumplimiento de agendas intensas, evitar señales de fatiga extrema, mostrar habilidades físicas y deportivas."]]},{"n":"Imagen institucional (partido o coalición)","items":[["Identidad gráfica colectiva","Colores oficiales, emblemas, utilitarios oficiales, logotipos, eslóganes, templetes."],["Coherencia ideológica","Comunicaciones y acciones acordes a la plataforma política, el posicionamiento ideológico y la historia del partido."],["Militancia y base social","Presencia y respaldo visible de sectores del partido (sindicatos, campesinos, jóvenes, líderes comunitarios) en eventos masivos."],["Asociación de reputación","Apropiación de temas transversales heredados de la trayectoria del candidato y del partido; control de daños a figuras de la organización."]]},{"n":"Imagen profesional","items":[["Agenciamiento","Capacidad para presidir mesas de trabajo, dar conferencias y sostener reuniones."],["Dominio técnico","Uso de datos, estadísticas, viabilidad presupuestal y políticas públicas."],["Conocimiento de historia y cultura","Capacidad para debatir y dialogar sobre cultura popular, historia, artes, etc."],["Ética de trabajo","Disciplina, puntualidad, orden, rigurosidad."],["Resolución de problemas","Mediación de conflictos y manejo de crisis mediáticas."]]},{"n":"Imagen verbal","items":[["Tono y modulación","Manejo de la voz, pausas y control del volumen."],["Narrativa (storytelling)","Uso de historias personales de superación o anécdotas."],["Mensajes de fuerza","Frases cortas, memorables y rítmicas, fáciles de recordar y repetir."],["Vocabulario adaptativo","Lenguaje ciudadano accesible en plazas públicas, alternado con vocabulario técnico-legislativo según el contexto."],["Idiomas","Manejo de otras lenguas."]]},{"n":"Imagen visual","items":[["Fotografía de campaña","Retratos iluminados, encuadres rodeado de personas comunes, cobertura de prácticas deportivas, entrenamientos, meditación, etc."],["Diseño y propaganda","Cartelería limpia y minimalista, con uso correcto del contraste tipográfico."],["Estética digital","Videos verticales (TikTok/Reels) dinámicos, transiciones profesionales y música de fondo."],["Habilidades artísticas","Exaltación de habilidades relacionadas con la música, la danza y otras capacidades artísticas."],["Simbología y props","Elementos icónicos identificables (chaleco, sombrero, lápiz, broche, herramientas) que cumplen una función narrativa."]]},{"n":"Atributos intrínsecos","items":[["Cualidades personales","Empatía, resiliencia ante crisis, carisma natural, capacidad de escucha activa, honestidad percibida."],["Trayectoria","Historial de servicio público o privado, cargos previos, leyes aprobadas, obras construidas, experiencia comprobable."],["Formación","Grados académicos, universidad de procedencia, publicaciones, dominio de idiomas."],["Valores representados","Basados en principios universales (justicia, lealtad, libertad, honestidad, equidad, orden, autoridad, disciplina)."]]},{"n":"Ideología política","items":[["Posicionamiento en el espectro","Posicionamiento claro (izquierda, centro o derecha) y visión sobre el rol del Estado, los impuestos, el bienestar social, el desarrollo económico, los derechos, etc."],["Postura frente al gobierno en turno","A favor o en contra: oficialismo, convergencia, continuismo u oposición."],["Radicalismo o moderación","Postura estratégicamente radical o moderada hacia el proyecto político vigente, los modelos de desarrollo, el régimen político, el orden internacional y las corrientes políticas emergentes."]]}],"bands":[[3.25,"Destacado"],[2.5,"Adecuado"],[1.75,"En desarrollo"],[0,"Insuficiente"]]};
+const KEY = "rubrica-imagen-publica-v1";
+const fresh = () => ({ m:{}, sc:{}, notes:{}, gen:"" });
+let st;
+try { st = JSON.parse(localStorage.getItem(KEY)) || fresh(); } catch (e) { st = fresh(); }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} }
+const $ = s => document.querySelector(s);
+const lvName = v => v === 0 ? "No observable" : DATA.levels[v-1].name;
+const band = a => DATA.bands.find(b => a >= b[0])[1];
+const mean = arr => arr.length ? arr.reduce((x, y) => x + y, 0) / arr.length : null;
+const fmt = a => a === null ? "–" : a.toFixed(2);
+function dimAvg(i){ const v = DATA.dims[i].items.map((_, j) => st.sc[i+"-"+j]).filter(x => x >= 1); return mean(v); }
+function esc(t){ return t.replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+$("#lvtab").innerHTML = DATA.levels.map(l => "<tr><td>"+l.v+"</td><td><b>"+l.name+".</b> "+l.d+"</td></tr>").join("") + "<tr><td>N/O</td><td><b>No observable.</b> No entra en el promedio.</td></tr>";
+$("#dims").innerHTML = DATA.dims.map((d, i) => '<details class="card dim" data-i="'+i+'"><summary><span class="n">'+(i+1)+". "+esc(d.n)+'<span class="meta" id="mt'+i+'"></span><span class="mini"><i id="mb'+i+'"></i></span></span><span class="badge" id="bd'+i+'">–</span><span class="chev" aria-hidden="true">›</span></summary><div class="body">'
+  + d.items.map((it, j) => '<div class="crit"><h3>'+esc(it[0])+'</h3><p>'+esc(it[1])+'</p><div class="btns" role="group" aria-label="'+esc(it[0])+'">'
+    + [1,2,3,4,0].map(v => '<button class="lv" data-k="'+i+"-"+j+'" data-v="'+v+'" aria-pressed="false" aria-label="'+lvName(v)+'">'+(v === 0 ? "N/O" : v)+'</button>').join("")
+    + '</div><div class="sel" id="s'+i+"-"+j+'"></div></div>').join("")
+  + '<label for="nt'+i+'">Observaciones de la dimensión</label><textarea id="nt'+i+'" data-n="'+i+'"></textarea></div></details>').join("");
+function summary(){
+  const g = mean(DATA.dims.map((_, i) => dimAvg(i)).filter(x => x !== null));
+  const L = ["RÚBRICA DE IMAGEN PÚBLICA", "Candidato/a: "+(st.m.cand||""), "Caso: "+(st.m.caso||""), "Evaluador/a: "+(st.m.eval||"")+"   Fecha: "+(st.m.fecha||""), "", "Promedio global: "+(g === null ? "–" : g.toFixed(2)+" / 4 ("+band(g)+")")];
+  DATA.dims.forEach((d, i) => { const a = dimAvg(i); L.push("- "+d.n+": "+(a === null ? "sin valorar" : a.toFixed(2)+" ("+band(a)+")")+(st.notes[i] ? " · "+st.notes[i] : "")); });
+  if (st.gen) L.push("", "Observaciones: "+st.gen);
+  return L.join("\n");
+}
+function refresh(){
+  let total = 0, done = 0;
+  document.querySelectorAll(".lv").forEach(b => b.setAttribute("aria-pressed", String(st.sc[b.dataset.k] === +b.dataset.v)));
+  DATA.dims.forEach((d, i) => {
+    const a = dimAvg(i), n = d.items.filter((_, j) => st.sc[i+"-"+j] !== undefined).length;
+    total += d.items.length; done += n;
+    $("#bd"+i).textContent = a === null ? "–" : a.toFixed(1);
+    $("#mt"+i).textContent = n + "/" + d.items.length + " criterios" + (a === null ? "" : " · " + band(a));
+    $("#mb"+i).style.width = (a === null ? 0 : (a - 1) / 3 * 100) + "%";
+    d.items.forEach((_, j) => { const v = st.sc[i+"-"+j]; $("#s"+i+"-"+j).textContent = v === undefined ? "" : (v === 0 ? "No observable" : v + " · " + lvName(v) + ": " + DATA.levels[v-1].d); });
+  });
+  const g = mean(DATA.dims.map((_, i) => dimAvg(i)).filter(x => x !== null));
+  $("#gavg").textContent = g === null ? "–" : g.toFixed(2);
+  $("#glbl").textContent = "Promedio global · " + (g === null ? "sin valorar" : band(g)) + " · " + done + "/" + total + " criterios";
+  $("#prog i").style.width = (done / total * 100) + "%";
+  $("#sum").value = summary();
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest(".lv");
+  if (b) { const k = b.dataset.k, v = +b.dataset.v; if (st.sc[k] === v) delete st.sc[k]; else st.sc[k] = v; save(); refresh(); }
+});
+document.addEventListener("input", e => {
+  const t = e.target;
+  if (t.dataset.m) st.m[t.dataset.m] = t.value;
+  else if (t.dataset.n !== undefined) st.notes[t.dataset.n] = t.value;
+  else if (t.id === "gen") st.gen = t.value;
+  else return;
+  save(); $("#sum").value = summary();
+});
+$("#copy").onclick = async () => {
+  const s = $("#sum"); s.value = summary();
+  try { await navigator.clipboard.writeText(s.value); $("#msg").textContent = "Resumen copiado."; }
+  catch (e) { s.focus(); s.select(); $("#msg").textContent = "Selecciona el texto y cópialo manualmente."; }
+};
+$("#reset").onclick = () => {
+  if (!confirm("¿Borrar todas las valoraciones y los datos de esta rúbrica?")) return;
+  st = fresh(); save();
+  document.querySelectorAll("input,textarea[data-n],#gen").forEach(x => x.value = "");
+  refresh();
+};
+document.querySelectorAll("[data-m]").forEach(x => x.value = st.m[x.dataset.m] || "");
+document.querySelectorAll("[data-n]").forEach(x => x.value = st.notes[x.dataset.n] || "");
+$("#gen").value = st.gen || "";
+refresh();
+</script></body></html>
