@@ -49,10 +49,10 @@ button.act.sec{background:transparent;color:var(--accent)}
 #bar .txt{flex:1}
 .mini{width:100%;height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:3px}.mini i{display:block;height:100%;background:var(--l3);width:0}
 </style></head><body><div class="wrap">
-<h1>Rúbrica de imagen pública del candidato/a</h1>
+<h1>Evaluación de la imagen pública del candidato/a</h1>
 <p class="sub">Curso Discurso Político · FCPyS-UNAM · 2027-1. Valora cada criterio de 1 a 4; usa N/O si no puede observarse.</p>
 <div class="card">
-<label for="m-c">Candidato/a</label><input id="m-c" data-m="cand" autocomplete="off">
+<label for="m-c">Agente - Candidato/a</label><input id="m-c" data-m="cand" autocomplete="off">
 <label for="m-k">Caso o contexto</label><input id="m-k" data-m="caso" autocomplete="off">
 <label for="m-e">Evaluador/a</label><input id="m-e" data-m="eval" autocomplete="off">
 <label for="m-f">Fecha</label><input id="m-f" data-m="fecha" type="date">
@@ -86,7 +86,7 @@ $("#dims").innerHTML = DATA.dims.map((d, i) => '<details class="card dim" data-i
   + '<label for="nt'+i+'">Observaciones de la dimensión</label><textarea id="nt'+i+'" data-n="'+i+'"></textarea></div></details>').join("");
 function summary(){
   const g = mean(DATA.dims.map((_, i) => dimAvg(i)).filter(x => x !== null));
-  const L = ["RÚBRICA DE IMAGEN PÚBLICA", "Candidato/a: "+(st.m.cand||""), "Caso: "+(st.m.caso||""), "Evaluador/a: "+(st.m.eval||"")+"   Fecha: "+(st.m.fecha||""), "", "Promedio global: "+(g === null ? "–" : g.toFixed(2)+" / 4 ("+band(g)+")")];
+  const L = ["EVALUACIÓN DE LA IMAGEN PÚBLICA", "Candidato/a: "+(st.m.cand||""), "Caso: "+(st.m.caso||""), "Evaluador/a: "+(st.m.eval||"")+"   Fecha: "+(st.m.fecha||""), "", "Promedio global: "+(g === null ? "–" : g.toFixed(2)+" / 4 ("+band(g)+")")];
   DATA.dims.forEach((d, i) => { const a = dimAvg(i); L.push("- "+d.n+": "+(a === null ? "sin valorar" : a.toFixed(2)+" ("+band(a)+")")+(st.notes[i] ? " · "+st.notes[i] : "")); });
   if (st.gen) L.push("", "Observaciones: "+st.gen);
   return L.join("\n");
